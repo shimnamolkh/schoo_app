@@ -1,0 +1,115 @@
+{
+ "_comments": "[]",
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-09-26 12:40:25.841777",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "student_registration",
+  "full_name",
+  "image",
+  "guardian",
+  "dob",
+  "age",
+  "school_name",
+  "second_language",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_registration",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "student registration",
+   "options": "student registration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "guardian",
+   "fieldtype": "Data",
+   "label": "guardian"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "DOB",
+   "reqd": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "AGE"
+  },
+  {
+   "fieldname": "school_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "school name",
+   "options": "School Details",
+   "reqd": 1
+  },
+  {
+   "default": "Malayaalam",
+   "fieldname": "second_language",
+   "fieldtype": "Select",
+   "label": "Second Language",
+   "options": "Malayaalam\nHindi\nSanskrit"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Image"
+  },
+  {
+   "allow_on_submit": 1,
+   "fetch_from": "student_registration.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "options": "student registration",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-09-26 13:51:51.127948",
+ "modified_by": "Administrator",
+ "module": "School App",
+ "name": "Student",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

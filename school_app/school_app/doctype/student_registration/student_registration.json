@@ -1,0 +1,172 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:first__name",
+ "creation": "2022-09-26 09:18:32.811379",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "school_details",
+  "first__name",
+  "last_name",
+  "full_name",
+  "school_name",
+  "dob",
+  "age",
+  "email",
+  "column_break_6",
+  "phone",
+  "guardian",
+  "address",
+  "section_break_10",
+  "fee_status",
+  "library_access",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "first__name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First  Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "DOB",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Int",
+   "label": "phone "
+  },
+  {
+   "fieldname": "guardian",
+   "fieldtype": "Data",
+   "label": "Guardian"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "student registration",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "paid",
+   "fieldname": "fee_status",
+   "fieldtype": "Select",
+   "label": "fee status",
+   "options": "paid\npending"
+  },
+  {
+   "default": "0",
+   "fieldname": "library_access",
+   "fieldtype": "Check",
+   "label": "library access"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "school_name",
+   "fieldtype": "Link",
+   "label": "school name",
+   "options": "School Details"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Age",
+   "reqd": 1
+  },
+  {
+   "fieldname": "school_details",
+   "fieldtype": "Link",
+   "label": "School Details",
+   "options": "School Details",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-09-27 13:20:43.819233",
+ "modified_by": "Administrator",
+ "module": "School App",
+ "name": "student registration",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "principal",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "teacher",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

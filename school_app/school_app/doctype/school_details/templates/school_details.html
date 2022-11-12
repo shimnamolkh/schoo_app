@@ -1,0 +1,46 @@
+{%  extends "templates/web.html" %}
+
+{% block page_content %}
+
+<div class="py-20 row">
+
+    <div class="col-sm-2">
+
+        <img alt="{{ school_name }}" src="{{ school_image }}">
+
+    </div>
+
+    <div class="col">
+
+        <h1>{{ school_name }}</h1>
+
+        <p class="lead">By {{ syllabus }}</p>
+
+        <div>
+
+            {%- if syllabus == 'ICSE' -%}
+
+            <span class="badge badge-success">ICSE</span>
+            {%- elif syllabus == 'CBSE' -%}
+
+            <span class="badge badge-primary">CBSE</span>
+
+            {%- endif -%}
+
+        </div>
+
+        <div class="mt-4">
+
+            <div>contact: <strong>{{ contact }}</strong></div>
+
+            <div>:email <strong>{{ email }}</strong></div>
+
+        </div>
+
+        <p>{{ description }}</p>
+
+    </div>
+
+</div>
+
+{% endblock %}
